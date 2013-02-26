@@ -1,0 +1,2 @@
+module ProductcollanasHelper
+end

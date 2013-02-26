@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class Getdata - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/getdata.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">ActiveRecord::Base
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-aggiornaAnagrafiche">#aggiornaAnagrafiche</a>
+    
+    <li><a href="#method-i-aggiornaDaFumettoOnline">#aggiornaDaFumettoOnline</a>
+    
+    <li><a href="#method-i-parseElencoProdotti">#parseElencoProdotti</a>
+    
+    <li><a href="#method-i-parseUrl">#parseUrl</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Utility.html">Utility</a>
+  
+    <li><a href="./Utility/FumettiImport.html">Utility::FumettiImport</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./Barcode.html">Barcode</a>
+  
+    <li><a href="./BarcodesController.html">BarcodesController</a>
+  
+    <li><a href="./BarcodesHelper.html">BarcodesHelper</a>
+  
+    <li><a href="./Collana.html">Collana</a>
+  
+    <li><a href="./CollanasController.html">CollanasController</a>
+  
+    <li><a href="./CollanasHelper.html">CollanasHelper</a>
+  
+    <li><a href="./Editore.html">Editore</a>
+  
+    <li><a href="./EditoresController.html">EditoresController</a>
+  
+    <li><a href="./EditoresHelper.html">EditoresHelper</a>
+  
+    <li><a href="./Getdata.html">Getdata</a>
+  
+    <li><a href="./Product.html">Product</a>
+  
+    <li><a href="./Productcollana.html">Productcollana</a>
+  
+    <li><a href="./ProductcollanasController.html">ProductcollanasController</a>
+  
+    <li><a href="./ProductcollanasHelper.html">ProductcollanasHelper</a>
+  
+    <li><a href="./ProductsController.html">ProductsController</a>
+  
+    <li><a href="./ProductsHelper.html">ProductsHelper</a>
+  
+    <li><a href="./SchedaFumetto.html">SchedaFumetto</a>
+  
+    <li><a href="./SchedaFumettosController.html">SchedaFumettosController</a>
+  
+    <li><a href="./SchedaFumettosHelper.html">SchedaFumettosHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Getdata</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-aggiornaAnagrafiche" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">aggiornaAnagrafiche</span><span
+            class="method-args">(tipo, opzioni)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="aggiornaAnagrafiche-source">
+            <pre><span class="ruby-comment"># File app/models/getdata.rb, line 8</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">aggiornaAnagrafiche</span>(<span class="ruby-identifier">tipo</span>, <span class="ruby-identifier">opzioni</span>)
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">tipo</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;fumetto online&quot;</span>
+    <span class="ruby-identifier">aggiornaDaFumettoOnline</span>(<span class="ruby-identifier">opzioni</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-string">'tipo di aggiornamento non implementato'</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- aggiornaAnagrafiche-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- aggiornaAnagrafiche-method -->
+
+    
+      <div id="method-i-aggiornaDaFumettoOnline" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">aggiornaDaFumettoOnline</span><span
+            class="method-args">(opzioni)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="aggiornaDaFumettoOnline-source">
+            <pre><span class="ruby-comment"># File app/models/getdata.rb, line 17</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">aggiornaDaFumettoOnline</span>(<span class="ruby-identifier">opzioni</span>)
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">opzioni</span>
+  <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;reparse schede&quot;</span>
+    <span class="ruby-constant">SchedaFumetto</span>.<span class="ruby-identifier">find_each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">scheda</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">albo</span> = <span class="ruby-constant">Product</span>.<span class="ruby-identifier">where</span>(<span class="ruby-string">&quot;codiceFumettoOnline = ?&quot;</span>,<span class="ruby-identifier">scheda</span>.<span class="ruby-identifier">codice</span>).<span class="ruby-identifier">first</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">oldAlbo</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">||</span>  <span class="ruby-identifier">oldAlbo</span>.<span class="ruby-identifier">lockUpdate</span> <span class="ruby-operator">==</span> <span class="ruby-keyword">false</span>
+        <span class="ruby-identifier">albo</span>.<span class="ruby-identifier">codiceFumettoOnline</span> = <span class="ruby-identifier">scheda</span>.<span class="ruby-identifier">codice</span>
+        <span class="ruby-identifier">albo</span>.<span class="ruby-identifier">copertina</span> = <span class="ruby-identifier">scheda</span>.<span class="ruby-identifier">copertina</span>
+        <span class="ruby-identifier">albo</span>.<span class="ruby-identifier">titolo</span> = <span class="ruby-identifier">scheda</span>.<span class="ruby-identifier">titolo</span>
+        <span class="ruby-identifier">albo</span>.<span class="ruby-identifier">isbn</span> = <span class="ruby-identifier">scheda</span>.<span class="ruby-identifier">isbn</span>
+        <span class="ruby-identifier">albo</span>.<span class="ruby-identifier">prezzo</span> = <span class="ruby-identifier">scheda</span>.<span class="ruby-identifier">prezzo</span>
+        <span class="ruby-identifier">albo</span>.<span class="ruby-identifier">descrizione</span> = <span class="ruby-identifier">scheda</span>.<span class="ruby-identifier">descrizione</span>
+        <span class="ruby-identifier">albo</span>.<span class="ruby-identifier">save</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-string">'tipo di aggiornamento non implementato'</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- aggiornaDaFumettoOnline-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- aggiornaDaFumettoOnline-method -->
+
+    
+      <div id="method-i-parseElencoProdotti" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">parseElencoProdotti</span><span
+            class="method-args">(url, opzioni)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="parseElencoProdotti-source">
+            <pre><span class="ruby-comment"># File app/models/getdata.rb, line 48</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">parseElencoProdotti</span>(<span class="ruby-identifier">url</span>, <span class="ruby-identifier">opzioni</span>)
+  <span class="ruby-identifier">agent</span> = <span class="ruby-constant">Mechanize</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-identifier">agent</span>.<span class="ruby-identifier">user_agent_alias</span> = <span class="ruby-string">'Mac Safari'</span>
+  <span class="ruby-identifier">wholePage</span> = <span class="ruby-identifier">agent</span>.<span class="ruby-identifier">get</span>(<span class="ruby-identifier">url</span>)
+  <span class="ruby-identifier">wholePage</span>.<span class="ruby-identifier">encoding</span> = <span class="ruby-string">&quot;iso-8859-1&quot;</span>
+  <span class="ruby-comment">## fase 1 </span>
+  <span class="ruby-comment">## verifica quante schede in tutto andranno parsate -&gt; totale_albi</span>
+  <span class="ruby-keyword">begin</span>
+     <span class="ruby-keyword">self</span>.<span class="ruby-identifier">totale_albi</span> = <span class="ruby-identifier">wholePage</span>.<span class="ruby-identifier">search</span>(<span class="ruby-string">&quot;.//section[@id='fumetti']/strong&quot;</span>).<span class="ruby-identifier">first</span>.<span class="ruby-identifier">text</span>[<span class="ruby-regexp">%r\d+/</span>]
+  <span class="ruby-keyword">rescue</span>
+     <span class="ruby-keyword">self</span>.<span class="ruby-identifier">totale_albi</span> = <span class="ruby-string">'non specificato'</span>
+  <span class="ruby-keyword">end</span>
+  
+  <span class="ruby-comment">## fase 2</span>
+  <span class="ruby-comment">## estrae tutti i link di tutti i prodotti, passando tutte le pagine</span>
+  <span class="ruby-comment">## e li memorizza in un array</span>
+  <span class="ruby-identifier">fumetti</span> = <span class="ruby-constant">Array</span>.<span class="ruby-identifier">new</span>
+  <span class="ruby-keyword">begin</span>
+     <span class="ruby-identifier">product_links</span> = <span class="ruby-identifier">wholePage</span>.<span class="ruby-identifier">search</span>(<span class="ruby-string">&quot;.//article[@class='albo']/a[2]&quot;</span>)
+     
+     <span class="ruby-keyword">if</span> <span class="ruby-identifier">opzioni</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;schede&quot;</span>
+        <span class="ruby-identifier">wholePage</span>.<span class="ruby-identifier">search</span>(<span class="ruby-string">&quot;//article[@class='albo']&quot;</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">sezione</span><span class="ruby-operator">|</span>
+          <span class="ruby-identifier">nuovascheda</span> = <span class="ruby-constant">SchedaFumetto</span>.<span class="ruby-identifier">new</span>
+          <span class="ruby-identifier">vecchiascheda</span> = <span class="ruby-constant">SchedaFumetto</span>.<span class="ruby-identifier">new</span>
+          <span class="ruby-identifier">nuovascheda</span>.<span class="ruby-identifier">getScheda</span>(<span class="ruby-string">&quot;da ricerca&quot;</span>, <span class="ruby-identifier">sezione</span>)
+          
+          <span class="ruby-identifier">vecchiascheda</span> = <span class="ruby-constant">SchedaFumetto</span>.<span class="ruby-identifier">where</span>(<span class="ruby-string">&quot;codice = ?&quot;</span>, <span class="ruby-identifier">nuovascheda</span>.<span class="ruby-identifier">codice</span>).<span class="ruby-identifier">first</span>
+  
+          <span class="ruby-keyword">if</span> <span class="ruby-identifier">vecchiascheda</span>.<span class="ruby-identifier">nil?</span>
+            <span class="ruby-identifier">nuovascheda</span>.<span class="ruby-identifier">save</span>
+          <span class="ruby-keyword">else</span>
+           <span class="ruby-comment">#TO_DO - gestire l'update' </span>
+          <span class="ruby-keyword">end</span>
+          
+          
+        <span class="ruby-keyword">end</span>
+     <span class="ruby-keyword">end</span>
+     
+     <span class="ruby-identifier">product_links</span>.<span class="ruby-identifier">each</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">link</span><span class="ruby-operator">|</span> <span class="ruby-identifier">fumetti</span> <span class="ruby-operator">&lt;&lt;</span>  [<span class="ruby-identifier">link</span>[<span class="ruby-string">'href'</span>], <span class="ruby-identifier">link</span>.<span class="ruby-identifier">text</span>]}
+ 
+    
+     <span class="ruby-identifier">next_page_link</span> = <span class="ruby-identifier">wholePage</span>.<span class="ruby-identifier">links</span>.<span class="ruby-identifier">find</span> { <span class="ruby-operator">|</span><span class="ruby-identifier">l</span><span class="ruby-operator">|</span> <span class="ruby-identifier">l</span>.<span class="ruby-identifier">text</span>.<span class="ruby-identifier">force_encoding</span>(<span class="ruby-string">&quot;iso-8859-1&quot;</span>) <span class="ruby-operator">==</span> <span class="ruby-string">'»'</span>.<span class="ruby-identifier">force_encoding</span>(<span class="ruby-string">&quot;iso-8859-1&quot;</span>)  }
+     <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-identifier">next_page_link</span>.<span class="ruby-identifier">nil?</span>
+       <span class="ruby-identifier">wholePage</span> = <span class="ruby-identifier">next_page_link</span>.<span class="ruby-identifier">click</span>
+      <span class="ruby-keyword">end</span>
+   <span class="ruby-keyword">end</span> <span class="ruby-keyword">while</span> <span class="ruby-operator">!</span><span class="ruby-identifier">next_page_link</span>.<span class="ruby-identifier">nil?</span>      
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- parseElencoProdotti-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- parseElencoProdotti-method -->
+
+    
+      <div id="method-i-parseUrl" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">parseUrl</span><span
+            class="method-args">(tipo,opzioni, url)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="parseUrl-source">
+            <pre><span class="ruby-comment"># File app/models/getdata.rb, line 38</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">parseUrl</span>(<span class="ruby-identifier">tipo</span>,<span class="ruby-identifier">opzioni</span>, <span class="ruby-identifier">url</span>)
+  <span class="ruby-identifier">tipo_di_parse</span> = <span class="ruby-identifier">tipo</span>
+  <span class="ruby-keyword">case</span> <span class="ruby-identifier">tipo</span>
+    <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;all&quot;</span> 
+      <span class="ruby-identifier">parseElencoProdotti</span>(<span class="ruby-identifier">url</span>, <span class="ruby-identifier">opzioni</span>) 
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">puts</span> <span class="ruby-string">'tipo di parse non implementato'</span>
+   <span class="ruby-keyword">end</span>    
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- parseUrl-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- parseUrl-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

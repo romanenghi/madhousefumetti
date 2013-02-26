@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+
+<title>class SchedaFumetto - Rails Application Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>app/models/scheda_fumetto.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">ActiveRecord::Base
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-getScheda">#getScheda</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="./doc/README_FOR_APP.html">README_FOR_APP</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Utility.html">Utility</a>
+  
+    <li><a href="./Utility/FumettiImport.html">Utility::FumettiImport</a>
+  
+    <li><a href="./ApplicationController.html">ApplicationController</a>
+  
+    <li><a href="./ApplicationHelper.html">ApplicationHelper</a>
+  
+    <li><a href="./Barcode.html">Barcode</a>
+  
+    <li><a href="./BarcodesController.html">BarcodesController</a>
+  
+    <li><a href="./BarcodesHelper.html">BarcodesHelper</a>
+  
+    <li><a href="./Collana.html">Collana</a>
+  
+    <li><a href="./CollanasController.html">CollanasController</a>
+  
+    <li><a href="./CollanasHelper.html">CollanasHelper</a>
+  
+    <li><a href="./Editore.html">Editore</a>
+  
+    <li><a href="./EditoresController.html">EditoresController</a>
+  
+    <li><a href="./EditoresHelper.html">EditoresHelper</a>
+  
+    <li><a href="./Getdata.html">Getdata</a>
+  
+    <li><a href="./Product.html">Product</a>
+  
+    <li><a href="./Productcollana.html">Productcollana</a>
+  
+    <li><a href="./ProductcollanasController.html">ProductcollanasController</a>
+  
+    <li><a href="./ProductcollanasHelper.html">ProductcollanasHelper</a>
+  
+    <li><a href="./ProductsController.html">ProductsController</a>
+  
+    <li><a href="./ProductsHelper.html">ProductsHelper</a>
+  
+    <li><a href="./SchedaFumetto.html">SchedaFumetto</a>
+  
+    <li><a href="./SchedaFumettosController.html">SchedaFumettosController</a>
+  
+    <li><a href="./SchedaFumettosHelper.html">SchedaFumettosHelper</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class SchedaFumetto</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-getScheda" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">getScheda</span><span
+            class="method-args">(tipo, opt)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="getScheda-source">
+            <pre><span class="ruby-comment"># File app/models/scheda_fumetto.rb, line 13</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">getScheda</span>(<span class="ruby-identifier">tipo</span>, <span class="ruby-identifier">opt</span>)  
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">tipo</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;scheda&quot;</span>
+        <span class="ruby-identifier">agent</span> = <span class="ruby-constant">Mechanize</span>.<span class="ruby-identifier">new</span>
+        <span class="ruby-comment">#estrae la scheda fumetto</span>
+        <span class="ruby-identifier">wholePage</span> = <span class="ruby-identifier">agent</span>.<span class="ruby-identifier">get</span>(<span class="ruby-identifier">opt</span>)
+        <span class="ruby-identifier">wholePage</span>.<span class="ruby-identifier">encoding</span> = <span class="ruby-string">&quot;iso-8859-1&quot;</span>
+        <span class="ruby-identifier">page</span> = <span class="ruby-identifier">wholePage</span>.<span class="ruby-identifier">search</span>(<span class="ruby-string">&quot;.//article[@class='albo']&quot;</span>).<span class="ruby-identifier">first</span> 
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">tipo</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;da ricerca&quot;</span>
+       <span class="ruby-identifier">page</span> = <span class="ruby-identifier">opt</span>
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-identifier">extractedInfo</span> = <span class="ruby-identifier">page</span>.<span class="ruby-identifier">search</span>(<span class="ruby-string">&quot;.//div[@class='scheda']/span[@class='info']&quot;</span>)
+    <span class="ruby-identifier">extractedInfo</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">t</span><span class="ruby-operator">|</span>
+       <span class="ruby-identifier">text</span> = <span class="ruby-identifier">t</span>.<span class="ruby-identifier">text</span>[<span class="ruby-regexp">%r\w+:/</span>]
+       <span class="ruby-keyword">case</span> <span class="ruby-identifier">text</span>
+       <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Titolo:&quot;</span>
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">titolo</span> = <span class="ruby-identifier">t</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">child</span>.<span class="ruby-identifier">text</span>
+       <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;ISBN:&quot;</span>
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">isbn</span> = <span class="ruby-identifier">t</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">text</span>[<span class="ruby-regexp">%r\d+/</span>]
+       <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Prezzo:&quot;</span>
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">prezzo</span> = <span class="ruby-identifier">t</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">text</span>[<span class="ruby-regexp">%r\d+,\d+/</span>]
+       <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Editore:&quot;</span>
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">editore</span> = <span class="ruby-identifier">t</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">text</span>
+       <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Collana:&quot;</span>
+          <span class="ruby-identifier">collana</span> = <span class="ruby-identifier">t</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">text</span>
+          <span class="ruby-identifier">collana_numero</span> = <span class="ruby-identifier">t</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">text</span>[<span class="ruby-regexp">%r\d+/</span>]
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">collana</span> =  [<span class="ruby-identifier">collana</span>, <span class="ruby-identifier">collana_numero</span>]
+       <span class="ruby-keyword">when</span> <span class="ruby-string">&quot;Serie:&quot;</span>
+          <span class="ruby-identifier">serie</span> = <span class="ruby-identifier">t</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">text</span>
+          <span class="ruby-identifier">serie_numero</span> = <span class="ruby-identifier">t</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">next</span>.<span class="ruby-identifier">text</span>[<span class="ruby-regexp">%r\d+/</span>]
+          <span class="ruby-keyword">self</span>.<span class="ruby-identifier">serie</span> =  [<span class="ruby-identifier">serie</span>, <span class="ruby-identifier">serie_numero</span>]
+       <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">desc</span> = <span class="ruby-string">&quot;&quot;</span>
+    <span class="ruby-identifier">page</span>.<span class="ruby-identifier">search</span>(<span class="ruby-string">&quot;.//div[@class='testo']&quot;</span>).<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">descrizione_parziale</span><span class="ruby-operator">|</span>
+       <span class="ruby-identifier">desc</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">descrizione_parziale</span>.<span class="ruby-identifier">text</span>.<span class="ruby-identifier">strip</span>.<span class="ruby-identifier">gsub</span>(<span class="ruby-regexp">%rTweet.*/</span>,<span class="ruby-string">&quot;&quot;</span>)
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">desc</span>.<span class="ruby-identifier">strip</span> <span class="ruby-operator">!=</span> <span class="ruby-string">&quot;&quot;</span>
+         <span class="ruby-keyword">self</span>.<span class="ruby-identifier">descrizione</span> = <span class="ruby-identifier">desc</span>.<span class="ruby-identifier">strip</span>.<span class="ruby-identifier">force_encoding</span>(<span class="ruby-string">&quot;ISO-8859-1&quot;</span>);
+    <span class="ruby-keyword">else</span>  
+         <span class="ruby-keyword">self</span>.<span class="ruby-identifier">descrizione</span> =<span class="ruby-string">'non disponibile'</span>
+    <span class="ruby-keyword">end</span>
+    
+    
+    <span class="ruby-keyword">begin</span>
+      <span class="ruby-identifier">dis</span> = <span class="ruby-identifier">page</span>.<span class="ruby-identifier">search</span>(<span class="ruby-string">&quot;.//tr/td[@class='tdv']&quot;</span>).<span class="ruby-identifier">first</span>.<span class="ruby-identifier">text</span>
+    <span class="ruby-keyword">rescue</span>
+      <span class="ruby-identifier">dis</span> = <span class="ruby-string">&quot;non disponibile&quot;</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">disegnatori</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">dis</span>
+    
+    <span class="ruby-comment">#rileva codice</span>
+    <span class="ruby-identifier">str</span> = <span class="ruby-identifier">page</span>.<span class="ruby-identifier">search</span>(<span class="ruby-string">&quot;.//a&quot;</span>)[<span class="ruby-value">1</span>][<span class="ruby-string">'href'</span>][<span class="ruby-regexp">%r-.\w*.php$/</span>]
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">codice</span> = <span class="ruby-identifier">str</span>[<span class="ruby-value">1</span>,<span class="ruby-identifier">str</span>.<span class="ruby-identifier">length</span><span class="ruby-operator">-</span><span class="ruby-value">5</span>]
+    
+    <span class="ruby-comment">#rileva copertina</span>
+    <span class="ruby-identifier">copertina</span> = <span class="ruby-string">'http://www.fumetto-online.it'</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">page</span>.<span class="ruby-identifier">search</span>(<span class="ruby-string">&quot;.//a/img&quot;</span>)[<span class="ruby-value">0</span>][<span class="ruby-string">'src'</span>]
+    <span class="ruby-keyword">self</span>.<span class="ruby-identifier">copertina</span> = <span class="ruby-identifier">copertina</span>
+      
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- getScheda-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- getScheda-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.1.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

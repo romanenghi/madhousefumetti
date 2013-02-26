@@ -1,0 +1,2 @@
+module CollanasHelper
+end
